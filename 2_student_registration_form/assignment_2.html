@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="image">
+        <img src="saylani.png" alt="saylani_logo">
+
+    </div>
+    <h2>STUDENT REGISTRATION FORM</h2>
+
+    <div class="box">
+        <form action="submit.html">
+            <div class="row">
+                <div class="col-1">
+                    <label for="fname">FIRST NAME</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter first name" maxlength="30" required>
+                    <span>(max 30 characters a-z and A-Z)</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="lname">LAST NAME</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter last name" maxlength="30" required>
+                    <span>(max 30 characters a-z and A-Z)</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="d_birth">DATE OF BIRTH</label>
+                </div>
+                <div class="col-2">
+                    <select name="" id="d_birth">
+                        <option value="">Day:</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+
+                    <select name="" id="d_birth">
+                        <option value="">Month:</option>
+                        <option value="">January</option>
+                        <option value="">February</option>
+                        <option value="">March</option>
+                    </select>
+
+                    <select name="" id="d_birth">
+                        <option value="">Year:</option>
+                        <option value="">2000</option>
+                        <option value="">2001</option>
+                        <option value="">2002</option>
+                        <option value="">2003</option>
+
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="email">EMAIL ID</label>
+                </div>
+                <div class="col-2">
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="mobile_no">MOBILE NUMBER</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" id="mobile_no" name="mobile_no" maxlength="10" placeholder="Enter mobile no" required>
+                    <span>(10 digit number)</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Gender</label>
+                </div>
+                <div class="col-2">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+
+                    <label for="female">Female</span>
+                        <input type="radio" id="female" name="gender" value="female">
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="subject">ADDRESS</label>
+                </div>
+                <div class="col-2">
+                    <textarea name="subject" id="subject" cols="35" rows="6"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="city">CITY</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="city" name="city" placeholder="Enter city name" maxlength="30">
+                    <span>(max 30 characters a-z and A-Z)</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="code">PIN CODE</label>
+                </div>
+                <div class="col-2">
+                    <input type="number" id="code" name="pin_code" placeholder="Enter pincode" maxlength="6">
+                    <span>(6 digit number)</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="state">STATE</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="state" name="state_name" placeholder="Enter state" maxlength="30">
+                    <span>(max 30 characters a-z and A-Z)</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="country">COUNTRY</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="country" name="country" placeholder="Enter country" maxlength="30" >
+                    <span>(max 30 characters a-z and A-Z)</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="">HOBBIES</label>
+                </div>
+                <div class="col-2">
+                    <label for="drawing">Drawing</label>
+                    <input type="checkbox" id="drawing" name="hobbies" value="draw">
+
+                    <label for="singing">Singing</span>
+                    <input type="checkbox" id="singing" name="hobbies" value="sing">
+
+                    <label for="sketching">Sketching</span>
+                    <input type="checkbox" id="sketching" name="hobbies" value="sketching">
+                   
+                    <div class="col-3">
+                    <label for="others">Others</label>
+                    <input type="checkbox" id="others" name="hobbies" value="others">
+                    <input type="text">
+                </div>
+                
+            </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="">QUALIFICATION</label>
+                </div>
+                <div class="col-2">
+                    <table>
+                        <tr>
+                            <th>S.NO.</th>
+                            <th>Examination</th>
+                            <th>Board</th>
+                            <th>Percentage</th>
+                            <th>Year of Passing</th>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td style="text-align: center;">(10 char max)</td>
+                            <td style="text-align: center;">(upto 2 decimal)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="fname">COURSES <br>APPLIED FOR</label>
+                </div>
+                <div class="col-2">
+                    <label for="bca">BCA</label>
+                    <input type="radio" id="bca" name="courses" value="bca">
+
+                    <label for="bcom">B.COM</label>
+                    <input type="radio" id="bcom" name="courses" value="b.com">
+
+                    <label for="bsc">B.Sc</label>
+                    <input type="radio" id="bsc" name="courses" value="bsc">
+
+                    <label for="bca">B.A</label>
+                    <input type="radio" id="ba" name="courses" value="ba">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
