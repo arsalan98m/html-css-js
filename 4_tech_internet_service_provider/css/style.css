@@ -1,0 +1,168 @@
+a:hover {
+  text-decoration: none;
+}
+
+#header {
+  color: #fff;
+  background: #333333;
+}
+#logo {
+  width: 100px;
+}
+
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu li a {
+  color: #fff;
+
+  padding: 15px 10px;
+  display: block;
+}
+
+#menu li a:hover {
+  background: #c0392b;
+}
+
+#text {
+  text-align: center;
+  background: orange;
+  font-size: 20px;
+}
+
+.service-box {
+  text-align: center;
+}
+
+.service-box i.fa {
+  color: #333333;
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section h2.section-head {
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section h2.section-head:after {
+  background: #feb47b;
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 20px auto;
+  content: "";
+}
+
+#news {
+  background: #efefef;
+}
+
+#news i.fa {
+  font-size: 80px;
+  font-weight: 300px;
+}
+
+#news h2 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+#news h6 {
+  background: orange;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+}
+
+#news h6 span {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#footer-sidebar {
+  color: #fff;
+  background: #333333;
+  padding: 20px 0px;
+}
+
+.footer-widget h4:after {
+  content: "";
+  background: #fff;
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 5px 0;
+}
+
+.footer-widget a {
+  color: #fff;
+}
+
+.footer-sec {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-sec li {
+  margin-bottom: 3px;
+}
+
+#footer {
+  background: #131313;
+  color: #fff;
+  padding: 10px;
+}
+
+#social-icons {
+  list-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#social-icons li {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+#social-icons li a {
+  color: #fff;
+  font-size: 23px;
+}
+
+@media (max-width: 768px) {
+  span {
+    text-align: center;
+  }
+
+  #menu {
+    text-align: center;
+  }
+  .footer-widget {
+    margin-bottom: 20px;
+  }
+
+  #footer {
+    text-align: center;
+  }
+
+  #social-icons {
+    margin-top: 10px;
+  }
+}

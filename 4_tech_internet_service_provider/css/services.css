@@ -1,0 +1,80 @@
+#main-services {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("https://cdn2.expertreviews.co.uk/sites/expertreviews/files/2018/06/best_android_tablet_lenovo_samsung_amazon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#services h1 {
+  color: orange;
+  text-align: center;
+  margin-top: 60px;
+}
+body:before {
+  background: #34495e;
+}
+#services p.residential {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.service-box i.fa {
+  color: white;
+}
+
+.service-box h4 {
+  color: orange;
+}
+
+.service-box p {
+  color: #fff;
+  text-align: justify;
+}
+
+#packages {
+  background: #fff;
+}
+
+.pricing-plan li {
+  border-bottom: 1px dotted #ededed;
+  font-size: 16px;
+}
+
+.pricing-plan {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+}
+
+.pricing-plan .card-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.card li {
+  padding: 8px 0;
+}
+
+.set-price {
+  background: #225b8b !important;
+  color: #ffffff;
+}
+.starter {
+  background: #2da2bc !important;
+  color: #ffffff;
+}
+
+.advanced {
+  background: #f79125 !important;
+  color: #ffffff;
+}
+
+.business {
+  background: #cc2836 !important;
+  color: #ffffff;
+}
