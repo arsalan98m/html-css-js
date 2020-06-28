@@ -1,2 +1,2 @@
 # html-css
-Html, CSS and JavaScript and Assignments.
+Html, CSS and JavaScript Assignments.
