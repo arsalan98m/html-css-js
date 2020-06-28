@@ -1,3 +1,21 @@
 #result {
-  margin: 0 auto;
+  width: 350px;
+}
+#btn {
+  font-weight: bolder;
+  display: inline-block;
+  box-shadow: 4px 2px 2px #868b99;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 26px;
+  padding: 10px 25px;
+  position: relative;
+  transition: all 0.1s ease;
+  margin: 0 10px;
+}
+
+.btn:active {
+  box-shadow: 0 0 0 #7e7e7e;
+  transform: translate(2px, 2px);
 }
