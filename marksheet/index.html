@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student marksheet</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="screen">
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <div class="animated infinite pulse">
+                  Student <br />
+                  MarkSheet
+                </div>
+              </div>
+            </div>
+
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input
+                    type="text"
+                    class="app-form-control"
+                    placeholder="Enter first Name"
+                    id="f_name"
+                  />
+
+                  <input
+                    type="text"
+                    class="app-form-control"
+                    placeholder="Enter last Name"
+                    id="l_name"
+                  />
+
+                  <input
+                    type="text"
+                    class="app-form-control"
+                    placeholder="Enter Institute"
+                    id="institute"
+                  />
+
+                  <input
+                    type="number"
+                    max="100"
+                    min="0"
+                    class="app-form-control"
+                    placeholder="ENTER ENGLISH MARKS"
+                    id="eng"
+                  />
+                </div>
+                <div class="app-form-group">
+                  <input
+                    class="app-form-control"
+                    placeholder="ENTER MATHS MARKS"
+                    type="number"
+                    max="100"
+                    min="0"
+                    id="maths"
+                  />
+                </div>
+                <div class="app-form-group">
+                  <input
+                    type="number"
+                    max="100"
+                    min="0"
+                    class="app-form-control"
+                    placeholder="ENTER COMPUTER MARKS"
+                    id="comp"
+                  />
+                </div>
+                <div class="app-form-group">
+                  <input
+                    type="number"
+                    max="100"
+                    min="0"
+                    class="app-form-control"
+                    placeholder="ENTER PHYSICS PHYSICS"
+                    id="phy"
+                  />
+                </div>
+
+                <div class="app-form-group">
+                  <input
+                    type="number"
+                    max="100"
+                    min="0"
+                    class="app-form-control"
+                    placeholder="ENTER URDU MARKS"
+                    id="urdu"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="button"
+                    name=""
+                    value="showPercentage"
+                    class="app-form-button"
+                    onclick="getMarks()"
+                  />
+
+                  <input
+                    type="button"
+                    name=""
+                    value="Clear"
+                    class="app-form-button"
+                    onclick=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-form-group showdata">
+            <p id="information"></p>
+            <p id="pf_name"></p>
+            <p id="pl_name"></p>
+            <p id="p_institute"></p>
+
+            <div id="table-show" class="display-none">
+              <table class="table table-striped">
+                <thead>
+                  <tr class="table-light">
+                    <th scope="col">#</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Marks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table-active text-white">
+                    <th scope="row">1</th>
+                    <td>English</td>
+                    <td id="s_english"></td>
+                  </tr>
+                  <tr class="table-active text-white">
+                    <th scope="row">2</th>
+                    <td>Math</td>
+                    <td id="s_math"></td>
+                  </tr>
+                  <tr class="table-active text-white">
+                    <th scope="row">3</th>
+                    <td>Computer</td>
+                    <td id="s_computer"></td>
+                  </tr>
+
+                  <tr class="table-active text-white">
+                    <th scope="row">4</th>
+                    <td>Physics</td>
+                    <td id="s_physics"></td>
+                  </tr>
+
+                  <tr class="table-active text-white">
+                    <th scope="row">5</th>
+                    <td>Urdu</td>
+                    <td id="s_urdu"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p id="showMarks"></p>
+            <p id="showPercentage"></p>
+            <p id="showGrade"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
