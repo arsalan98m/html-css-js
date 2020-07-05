@@ -100,3 +100,29 @@ function getMarks() {
     showGrade.innerHTML = "Please type valid marks";
   }
 }
+
+function clearAll() {
+  var english = document.getElementById("eng");
+  english.value = "";
+
+  var maths = document.getElementById("maths");
+  maths.value = "";
+
+  var computer = document.getElementById("comp");
+  computer.value = "";
+
+  var physics = document.getElementById("phy");
+  physics.value = "";
+
+  var urdu = document.getElementById("urdu");
+  urdu.value = "";
+
+  var first_name = document.getElementById("f_name");
+  first_name.value = "";
+
+  var last_name = document.getElementById("l_name");
+  last_name.value = "";
+
+  var institute = document.getElementById("institute");
+  institute.value = "";
+}
