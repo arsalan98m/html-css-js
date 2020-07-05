@@ -132,9 +132,26 @@ input {
 }
 
 @media (max-width: 576px) {
-  .container {
-    flex: 0 1 100px;
-    margin: auto;
+  /* .screen-body-item.left {
+    display: inline-block;
+    margin: 40px auto;
+    text-align: center;
+  } */
+
+  .screen-body-item {
+    flex: 1;
     padding: 0px;
+    width: 100%;
+  }
+
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 10px;
+  }
+
+  .app-title {
+    font-size: 10px;
+    padding: 10px;
   }
 }
