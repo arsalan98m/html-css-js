@@ -13,13 +13,21 @@ function timer() {
   msecHeading.innerHTML = msec;
 
   if (msec >= 100) {
-    sec++;
-    secHeading.innerHTML = sec + " : ";
     msec = 0;
+    sec++;
+    if (sec >= 10) {
+      secHeading.innerHTML = sec + " : ";
+    } else {
+      secHeading.innerHTML = "0" + sec + " : ";
+    }
   } else if (sec >= 60) {
     min++;
-    minHeading.innerHTML = min + " : ";
     sec = 0;
+    if (min >= 10) {
+      minHeading.innerHTML = min + " : ";
+    } else {
+      minHeading.innerHTML = "0" + min + " : ";
+    }
   }
 }
 
