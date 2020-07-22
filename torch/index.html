@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light on off</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <style>
+        img {
+            width: 400px;
+            display: inline-block;
+            margin: 10px auto;
+        }
+
+        button {
+            text-align: center;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5 text-primary">Light</h1>
+        <div class="row justify-content-center">
+            <div class="col-md8">
+                <img id="getImage" src="off.png" width="400px" alt="">
+
+            </div>
+        </div>
+
+        <div class="text-center">
+            <button type="button" id="on" onclick="lightOnOff()" class="btn btn-danger">TURN ON</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
