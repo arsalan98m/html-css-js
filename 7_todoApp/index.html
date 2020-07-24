@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center">Todo App</h1>
+
+    </div>
+
+    <div class="container">
+        <form class="form-inline">
+
+            <input type="text" class="form-control todo-input" id="email" placeholder="Enter Todo" name="email">
+
+            <button class="btn todo-button" type="submit"><i class="fa fa-plus-circle"></i></button>
+            <button class="btn delete-all" type="submit"><i class="fa fa-trash"></i></button>
+
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+
+    </div>
+    </form>
+
+
+    <div class="todo-container">
+        <ul class="todo-list">
+
+        </ul>
+    </div>
+
+
+
+
+    <!--
+    <form>
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit"><i class="fa fa-plus-circle"></i></button>
+
+
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+
+        <div>
+            <button class="delete-all">Delete all</button>
+        </div>
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list">
+
+        </ul>
+    </div>-->
+    <script src="app.js"></script>
+</body>
+
+</html>
