@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>Todo App</title>
 </head>
@@ -26,8 +25,8 @@
 
             <input type="text" class="form-control todo-input" id="email" placeholder="Enter Todo" name="email">
 
-            <button class="btn todo-button" type="submit"><i class="fa fa-plus-circle"></i></button>
-            <button class="btn delete-all" type="submit"><i class="fa fa-trash"></i></button>
+            <button class="btn todo-button mt-3 mb-3" type="submit"><i class="fa fa-plus-circle"></i></button>
+            <button class="btn delete-all mt-3 mb-3" type="submit"><i class="fa fa-trash"></i></button>
 
             <div class="select">
                 <select name="todos" class="filter-todo">
@@ -41,10 +40,14 @@
     </form>
 
 
-    <div class="todo-container">
-        <ul class="todo-list">
+    <div class="todo-container container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <ul class="todo-list">
 
-        </ul>
+                </ul>
+            </div>
+        </div>
     </div>
 
 

@@ -9,13 +9,13 @@ body {
       linear-gradient(110deg, #f93d66, #6d47d9);
     background-size: 340px, auto;
     
-    margin: 50px;
+     margin: 50px; 
     /* background: white; */
     background-attachment: fixed;
     letter-spacing: -1px;
 
     font-family: "Poppins", sans-serif;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     color: white;
   }
 
@@ -79,11 +79,16 @@ form button{
       justify-content: space-between;
       align-items: center;
       transition: all 1s ease;
+   
   }
 
-  .todo li{
+   .todo li{
       flex: 1;
-  }
+   
+     
+     
+    
+  } 
 
   .delete-btn,.complete-btn,.edit-btn{
       background-color: #f93d66;
@@ -100,7 +105,10 @@ form button{
 
 .todo-item{
     padding: 0rem 0.5rem;
+    
+   
 }
+
 .fa-trash,
 .fa-check ,
 .fa-edit      {
@@ -153,4 +161,15 @@ select{
 .select:hover::after{
     background: white;
     color: #f93d66;
+}
+
+@media (max-width: 568px){
+    .todo{
+        display: flex;
+        flex: 1 1 10%;
+        background: white;
+    }
+
+    
+    
 }
