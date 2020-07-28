@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+                <h1 id="heading" class="mx-3 mb-4 text-center font-weight-bold display-4 text-white">Quiz App</h1>
+
+                <div class="col-sm-6 py-3 mx-auto">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="col-sm-6 py-3 mx-auto">
+                    <select name="" id="" class="filter-option form-control">
+                        <option value="" disabled selected>Select your quiz:</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <p id="showQuestions" class="font-weight-bold ml-4" style="font-size: 24px;"></p>
+        </div>
+
+        <div class="row">
+            <div class="form-group mx-5 text-justify" id="showChoices">
+
+            </div>
+        </div>
+
+
+
+
+        <button id="startBtn" style="display: none;" class="btn btn-info btn-lg" onclick="nextQuestion()">Next</button>
+
+        <button id="start" style="display: none;" class="btn btn-info btn-lg" onclick="displayChoices()">Start</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

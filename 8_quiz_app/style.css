@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color:#2BD2FF;
+
+    
+    color: white;
+
+    margin-top: 120px;
+}
+
+label {
+    font-size: 22px;
+    text-align: center;
+
+}
+
+tr,
+td {
+    width: 390px;
+}
+
