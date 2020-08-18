@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="text-center">Todo App</h1>
+
+    </div>
+
+    <div class="container">
+        <form class="form-inline">
+
+            <input type="text" class="form-control todo-input" id="email" placeholder="Enter Todo" name="email">
+
+            <button class="btn todo-button mt-3 mb-3" type="submit"><i class="fa fa-plus-circle"></i></button>
+            <button class="btn delete-all mt-3 mb-3" type="submit"><i class="fa fa-trash"></i></button>
+
+          
+
+    </div>
+    </form>
+
+
+    <div class="todo-container container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <ul class="todo-list">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Firebase database connection -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDYmOZMsqkLbUdn3_FOY4zowFoTKIgZpK8",
+          authDomain: "mobile-web-assignments.firebaseapp.com",
+          databaseURL: "https://mobile-web-assignments.firebaseio.com",
+          projectId: "mobile-web-assignments",
+          storageBucket: "mobile-web-assignments.appspot.com",
+          messagingSenderId: "962685264965",
+          appId: "1:962685264965:web:5bf94208a894c90833ef2c",
+          measurementId: "G-1RWHDR05T9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+         
+      </script>
+
+    <!-- Todo App Script file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
