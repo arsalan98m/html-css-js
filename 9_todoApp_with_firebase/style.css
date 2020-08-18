@@ -65,6 +65,7 @@ form button:hover {
 .todo-list {
   min-width: 30%;
   list-style: none;
+  margin-right: -50px;
 }
 
 .todo {
