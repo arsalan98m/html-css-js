@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header" id="quiz-header">
+        <h2 id="question">Quiz App</h2>
+
+        <div id="select">
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="firstname"
+              placeholder="Enter your email"
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="lastname"
+              placeholder="Enter your password"
+            />
+
+            <input type="submit" onclick="signUp()" value="Sign up" />
+            <input type="submit" onclick="signIn()" value="Sign in" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Firebase connection -->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAKhDPLjbX38dUU5NUp6d18dE3w3dZgZxo",
+      authDomain: "quiz-app-data-ff2cd.firebaseapp.com",
+      databaseURL: "https://quiz-app-data-ff2cd.firebaseio.com",
+      projectId: "quiz-app-data-ff2cd",
+      storageBucket: "quiz-app-data-ff2cd.appspot.com",
+      messagingSenderId: "630573858395",
+      appId: "1:630573858395:web:dfa1f483f7108fc74d097e",
+      measurementId: "G-XRZDNBBSRP",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="login.js"></script>
+</html>

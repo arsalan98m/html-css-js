@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="showAvailableQuiz()">
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header" id="quiz-header">
+        <div style="display: flex; justify-content: space-between">
+          <h3 id="time">
+            Remaining Time: <span id="mins">5</span> :
+            <span id="secs">0</span>
+          </h3>
+          <h3 id="leftQuestions">Question Left:</h3>
+        </div>
+
+        <h2 id="question">Quiz App</h2>
+        <h2 id="question1">Available Quiz</h2>
+
+        <div id="select"></div>
+
+        <ul id="showQuestions"></ul>
+
+        <button id="logoutbtn" onclick="logoutUser()">Logout</button>
+      </div>
+
+      <button id="submit" onclick="checkKey()" class="hidebtn">Start</button>
+    </div>
+  </body>
+
+  <!-- Firebase connection -->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAKhDPLjbX38dUU5NUp6d18dE3w3dZgZxo",
+      authDomain: "quiz-app-data-ff2cd.firebaseapp.com",
+      databaseURL: "https://quiz-app-data-ff2cd.firebaseio.com",
+      projectId: "quiz-app-data-ff2cd",
+      storageBucket: "quiz-app-data-ff2cd.appspot.com",
+      messagingSenderId: "630573858395",
+      appId: "1:630573858395:web:dfa1f483f7108fc74d097e",
+      measurementId: "G-XRZDNBBSRP",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="script.js"></script>
+</html>
