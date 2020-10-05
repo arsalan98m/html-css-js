@@ -203,8 +203,7 @@ db.collection("messages")
         <span class="message-data-name"
           ><i class="fa fa-circle online"></i> me</span
         >
-        <span class="message-data-time">${doc.data().date}</span> &nbsp;
-        &nbsp; <span class="message-data-name"></span>
+        
         <i class="fa fa-circle me"></i>
       </div>
       <div class="message other-message float-right" id="${doc.id}">
@@ -220,7 +219,7 @@ db.collection("messages")
         <span class="message-data-name"
           ><i class="fa fa-circle online"></i>${doc.data().email}</span
         >
-        <span class="message-data-time">10:12 AM, Today</span>
+         
       </div>
       <div class="message my-message">
         ${doc.data().message}
