@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Responsive Login + Signup form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chat App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <h1 style="text-align: center; color: rgb(74, 74, 74)">Chat App</h1>
+    <div class="form-modal">
+      <div class="form-toggle">
+        <button id="login-toggle" onclick="toggleLogin()">log in</button>
+        <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+      </div>
+
+      <div id="login-form">
+        <form>
+          <input type="text" id="email" placeholder="Enter email or username" />
+          <input type="password" id="password" placeholder="Enter password" />
+          <button
+            type="button"
+            id="signin"
+            class="btn login"
+            onClick="signIn()"
+          >
+            login
+          </button>
+          <!-- <p><a href="javascript:void(0)">Forgotten Password</a></p> -->
+          <hr />
+          <button
+            type="button"
+            class="btn -box-sd-effect"
+            onClick="googleSignIn()"
+          >
+            <i class="fa fa-google fa-lg" aria-hidden="true"></i>
+            sign in with google
+          </button>
+        </form>
+      </div>
+
+      <div id="signup-form">
+        <form>
+          <input type="email" id="emailsup" placeholder="Enter your email" />
+          <input type="text" id="usernamesup" placeholder="Choose username" />
+          <input
+            type="password"
+            id="passwordsup"
+            placeholder="Create password"
+          />
+
+          <p>
+            Clicking <strong>create account</strong> means that you are agree to
+            our <a href="javascript:void(0)">terms of services</a>.
+          </p>
+          <hr />
+
+          <button
+            type="button"
+            class="btn signup"
+            id="singup"
+            onClick="signup()"
+          >
+            create account
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
