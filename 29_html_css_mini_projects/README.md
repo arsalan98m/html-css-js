@@ -1,1 +1,0 @@
-[UIDESIGNDAILY](https://uidesigndaily.com/)
