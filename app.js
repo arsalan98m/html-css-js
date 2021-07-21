@@ -174,6 +174,12 @@ const projects = [
     link: "./27_html_css_mini_projects/submit-form/index.html",
     image: "./images/submit-form.png",
   },
+
+  {
+    name: "Star Bucks Landing Page",
+    link: "./29_starbucks/index.html",
+    image: "./images/star-bucks.png",
+  },
 ];
 
 projects.forEach((project) => {

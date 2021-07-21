@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Star Bucks Coffee Company</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="nav__center">
+          <!-- Start Navbar Header -->
+          <div class="nav__header">
+            <div class="nav__logo">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/763px-Starbucks_Corporation_Logo_2011.svg.png"
+                alt="starbucks logo"
+              />
+            </div>
+
+            <button type="button" class="nav__toggle" id="nav__open">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <button
+              type="button"
+              class="nav__toggle nav__hidden"
+              id="nav__close"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- End of nav header -->
+
+          <!-- Navbar main -->
+          <div class="nav__main">
+            <!-- Navbar main Left -->
+            <ul class="nav__mainLeft">
+              <li>
+                <a href="#">Menu</a>
+              </li>
+
+              <li>
+                <a href="#">Rewards</a>
+              </li>
+
+              <li>
+                <a href="#">Gifts</a>
+              </li>
+            </ul>
+
+            <!-- End of Navbar main Left -->
+
+            <!-- Navbar main right -->
+            <div class="nav__mainRight">
+              <div class="nav__mainRight__findStore">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Find a store</span>
+              </div>
+
+              <div class="nav__mainRight__btnContainer">
+                <button class="nav__mainRight__signIn">Sign in</button>
+                <button class="nav__mainRight__joinNow">Join now</button>
+              </div>
+            </div>
+            <!-- End Navbar main Right -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Sidebar -->
+
+    <aside class="aside" id="sidebar">
+      <!-- aside links -->
+      <ul class="aside__links">
+        <li>
+          <a href="#"><span>Menu</span><i class="fas fa-arrow-right"></i></a>
+        </li>
+
+        <li>
+          <a href="#">Rewards</a>
+        </li>
+
+        <li>
+          <a href="#">Gifts</a>
+        </li>
+      </ul>
+
+      <!-- End of aside links -->
+
+      <div class="aside__underline"></div>
+
+      <!-- Buttons -->
+
+      <div class="aside__btn">
+        <div class="aside__loginJoinNow">
+          <button class="aside__login">Sign in</button>
+          <button class="aside__joinNow">Join now</button>
+        </div>
+
+        <div class="aside__findStore">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Find a store</span>
+        </div>
+      </div>
+    </aside>
+    <!-- End of Sidebar -->
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <!-- End of Overlay -->
+
+    <main>
+      <!-- Annuncement Banner -->
+      <section class="announcements">
+        <p>
+          Facial coverings are now optional in our stores for our fully
+          vaccinated customers, following CDC guidance, except where local
+          regulations require it by law. <a href="#">Learn more</a>
+        </p>
+      </section>
+      <!-- End of Announcement Banner -->
+
+      <!-- Rewards -->
+      <section class="section two-column rewards">
+        <div class="rewards__left">
+          <div class="rewards__leftText">
+            <h1>FREE COFFEE IS A TAP AWAY</h1>
+            <h3>Join now to start earning Rewards.*</h3>
+
+            <button class="btn rewards__leftBtn">Join now</button>
+          </div>
+        </div>
+        <div class="rewards__right">
+          <div class="rewards__rightImage">
+            <img src="./images/137-71056.webp" class="img" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- End of Rewards -->
+
+      <!-- Chill Section -->
+      <section class="two-column chill">
+        <div class="chill__left">
+          <div class="chill__leftImage">
+            <img src="./images/chill.webp" class="img" alt="" />
+          </div>
+        </div>
+
+        <div class="chill__right">
+          <h1>DELIGHTFULLY CHILL</h1>
+          <h4>
+            Refresh your day with the bright, tropical flavors of our Star Drink
+            and Kiwi Starfruit Starbucks Refreshers® beverage.
+          </h4>
+
+          <button class="btn">Order iced beverage</button>
+        </div>
+      </section>
+      <!-- End of Chill Section -->
+
+      <!-- Happy Place Section -->
+      <section class="section two-column happy">
+        <div class="happy__left">
+          <div class="happy__leftImage">
+            <img src="./images/happy.webp" class="img" alt="" />
+          </div>
+        </div>
+
+        <div class="happy__right">
+          <h1>HAPPY PLACE FOUND</h1>
+          <h4>
+            Nothing says summer like our Frappuccino® drinks. Treat yourself to
+            the new Strawberry Funnel Cake, Mocha Cookie Crumble or Caramel
+            Ribbon Crunch.
+          </h4>
+
+          <button class="btn">Order Frappuccino® drink</button>
+        </div>
+      </section>
+      <!-- End of Happy Place Section -->
+
+      <!-- Order and Pickup Section -->
+      <section class="two-column order">
+        <div class="order__left">
+          <img src="./images/order.webp" class="img" alt="" />
+          <div class="order__leftFooter">
+            <h5>Order and pick up. Easy as that.</h5>
+            <p>
+              Just open the app, order your favorites, and enjoy contactless
+              pay. From there, choose whichever pickup method is best for you.
+            </p>
+            <button class="btn">See pickup options</button>
+          </div>
+        </div>
+        <div class="order__right">
+          <img src="./images/credit-card.jpg" class="img" alt="" />
+
+          <div class="order__rightFooter">
+            <h5>Earning 4,500 Bonus Stars is Super Starifying</h5>
+            <p>
+              With a <span>$0 intro annual fee for your first year</span>, earn
+              more Stars and even more Rewards with the Starbucks® Rewards Visa®
+              Card.
+            </p>
+
+            <button class="btn">Learn more</button>
+          </div>
+        </div>
+      </section>
+      <!-- End of Order and Picup Section -->
+
+      <!-- Menu Section -->
+      <section class="section two-column menu">
+        <div class="menu__left">
+          <h3>Creating an inclusive environment</h3>
+          <p>
+            We want everyone to feel welcome at Starbucks. That’s why we’re
+            proud to offer braille and large-print menus for blind and
+            low-vision customers.
+          </p>
+
+          <button class="btn">Learn more</button>
+        </div>
+        <div class="menu__right">
+          <img src="./images/menu.jpg" class="img" alt="" />
+        </div>
+      </section>
+      <!-- End of Menu Section -->
+
+      <div class="participating">
+        <p>
+          *At participating stores. Some restrictions apply. See
+          <a href="#">starbucks.com/rewards.</a>
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__center">
+        <div class="footer__about">
+          <div class="footer__links">
+            <h5>
+              About us <span><i class="fas fa-chevron-down"></i></span>
+            </h5>
+            <ul>
+              <li>
+                <a href="">Our Heitage</a>
+              </li>
+
+              <li>
+                <a href="">Our Coffee</a>
+              </li>
+
+              <li>
+                <a href="">Stories and News</a>
+              </li>
+
+              <li>
+                <a href="">Invester Relations</a>
+              </li>
+
+              <li>
+                <a href="">Policies and Standards</a>
+              </li>
+
+              <li>
+                <a href="">Customer Services</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <h5>
+              Careers <span><i class="fas fa-chevron-down"></i></span>
+            </h5>
+            <ul>
+              <li>
+                <a href="">Culture and Values</a>
+              </li>
+
+              <li>
+                <a href="">Inclusion, Diversity and Equity</a>
+              </li>
+
+              <li>
+                <a href="">College Achievement Plan</a>
+              </li>
+
+              <li>
+                <a href="">U.S.Careers</a>
+              </li>
+
+              <li>
+                <a href="">International Careers</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <h5>
+              Social Impact <span><i class="fas fa-chevron-down"></i></span>
+            </h5>
+            <ul>
+              <li>
+                <a href="">Ethical Sourcing</a>
+              </li>
+
+              <li>
+                <a href="">Leading in Sustainability</a>
+              </li>
+
+              <li>
+                <a href="">Strengthening Communites</a>
+              </li>
+
+              <li>
+                <a href="">Creating Opportunities</a>
+              </li>
+
+              <li>
+                <a href="">Gloval Social Impact Report</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <h5>
+              For Business Partners
+              <span><i class="fas fa-chevron-down"></i></span>
+            </h5>
+            <ul>
+              <li>
+                <a href="">Landlord Support Center</a>
+              </li>
+
+              <li>
+                <a href="">Suppliers</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <h5>
+              Order and Picup <span><i class="fas fa-chevron-down"></i></span>
+            </h5>
+            <ul>
+              <li>
+                <a href="">Order on the App</a>
+              </li>
+
+              <li>
+                <a href="">Order on the Web</a>
+              </li>
+
+              <li>
+                <a href="">Delivery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="underline"></div>
+
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="" class="social-icon">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="social-icon">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="social-icon"> <i class="fab fa-youtube"></i> </a>
+          </li>
+
+          <li>
+            <a href="" class="social-icon"><i class="fab fa-twitter"></i> </a>
+          </li>
+        </ul>
+
+        <!-- terms and conditions -->
+
+        <ul class="terms_conditions">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#">CA Supply Chain Act</a>
+          </li>
+
+          <li>
+            <a href="#">Submit Your Idea</a>
+          </li>
+
+          <li>
+            <a href="#">Cookies Preferences</a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          © 2021 Starbucks Coffee Company. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
